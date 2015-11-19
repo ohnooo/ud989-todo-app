@@ -1,7 +1,14 @@
 /*global Backbone */
+
+// app = app 	** if app exist, don't do anything
+// || 			** or
+// app = {} 	** if app is emplty, set to new empty object.
 var app = app || {};
 
+// Immediate invoke function.
 (function () {
+	// Any variable decare inside of this function does not contaminate global scope,
+	// don't accidentally over ride any variable decare in the global scope.
 	'use strict';
 
 	// Todo Model
@@ -23,4 +30,5 @@ var app = app || {};
 			});
 		}
 	});
+	//() immediately invoke
 })();
