@@ -17,8 +17,10 @@ var app = app || {};
 
 		// The DOM events specific to an item.
 		events: {
+		//	Event  .CSS Class | Selector : Function
 			'click .toggle': 'toggleCompleted',
 			'dblclick label': 'edit',
+			'click .edit-btn': 'edit',
 			'click .destroy': 'clear',
 			'keypress .edit': 'updateOnEnter',
 			'keydown .edit': 'revertOnEscape',
